@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFF71111" /> <!-- Warna latar belakang -->
+    <stroke
+        android:width="3dp" <!-- Ketebalan garis tepi -->
+    android:color="#FFF71111" <!-- Warna garis tepi -->
+    android:dashGap="0dp" <!-- Jarak antar garis putus-putus (0 untuk garis penuh) -->
+    android:dashWidth="0dp" /> <!-- Panjang garis putus-putus (0 untuk garis penuh) -->
+    <corners android:radius="12dp" /> <!-- Jari-jari sudut (misalnya, 12dp untuk sudut yang melengkung) -->
+</shape>

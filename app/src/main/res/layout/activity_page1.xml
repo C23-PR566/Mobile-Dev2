@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E53838">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bagian 1 : Hewan"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/descriptionTextView"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pelajari huruf alfabet standar BISINDO untuk pelafalan kata"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/mulaiButton"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/mulaiButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MULAI"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/descriptionTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/keluarButton"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/keluarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KELUAR"
+        android:textColor="#000000"
+        app:layout_constraintTop_toBottomOf="@id/mulaiButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/navigationLayout"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/navigationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#D33131"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/houseImageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/house"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"/>
+
+        <ImageView
+            android:id="@+id/manImageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/man"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
